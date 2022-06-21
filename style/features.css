@@ -1,13 +1,15 @@
-.features{
-    /* width: 25%; */
+ .features{
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
+
 .features__btn{
     display: none;
 }
+
 .features-list{
     list-style: none;
     display: flex;
@@ -19,21 +21,23 @@
     background-color: white;
     box-shadow: 0 0 15px 1px rgb(224 224 224 / 50%);
     border-radius: 15px;
-    /* clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%); */
-    }
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+}
 .features-list__item{
     text-align: center;
     margin: 25px auto;
 }
+
 @media(max-width:1440px){
     .features-list{
         padding: 15px 20px;
         width: 10vw;
     }
 }
+
 @media(max-width:1000px){
     .features-list{
         padding: 10px 15px;
         width: 110px;
     }
-}
+} 

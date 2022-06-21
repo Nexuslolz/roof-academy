@@ -1,4 +1,4 @@
-.main-container{
+ .main-container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -7,11 +7,13 @@
     max-width: 1000px;
     gap: 25px;
 }
+
 .main-content__header{
     font-weight: 400;
     font-size: 55px;
     width: 100%;
 }
+
 .main-content__subheader{
     font-size: 32px;
 }
@@ -19,6 +21,7 @@
 .main-content__img{
     margin-right: 2%;
 }
+
 .main-content{
     display: flex;
     flex-direction: row;
@@ -27,6 +30,7 @@
     position: relative;
 
 }
+
 .main-content__link{
     width: 18vw;
     max-width: 300px;
@@ -45,47 +49,58 @@
     line-height: 22px;
     transition: 0.5s;
     position: relative;
-}
+} 
+
 .main-content__link:first-child{
     background-color: rgba(18, 200, 104, 1);
 }
+
 .main-content__link:last-child{
     background-color: rgba(243, 129, 32, 1);
 }
+
 .btn-img{
     width: 10%;
 }
+
 .main-content__text,
 .btn-img{
     transition: 0.5s;
 }
+
 .main-content__link:hover .main-content__text{
     transition: 0.5s;
     transform: translateX(3px);
 }
+
 .main-content__link:hover .btn-img{
     transition: 0.5s;
     transform: translateX(-3px);
 }
+
 .main-content__link:first-child:hover{
     background-color: rgba(33, 226, 124, 1)
 }
+
 .main-content__link:last-child:hover{
     background-color: rgba(253, 156, 73, 1);
 }
+
 .main-content__content{
     text-align: center;
-    width: 13vw;
+    width:13vw;
     line-height: 22px;
     min-width: 200px;
     margin-left: 15px;
 }
+
 .main-content__pic{
     position: absolute;
     top: 10px;
     left: 0;
     width: 26px;
 }
+
 @media(max-width:1440px){
     .main-content__header{
         font-size: 45px;
@@ -98,6 +113,7 @@
     }
     
 }
+
 @media(max-width:1100px){
     .main-content__header{
         font-size: 36px;
@@ -116,6 +132,7 @@
         margin-left: 25px;
     }
 }
+
 @media(max-width:890px){
     .main-container{
         justify-content: start;
@@ -128,9 +145,10 @@
         font-size: 18px;
     }
 }
+
 @media(max-width:450px){
     .main-content{
         flex-wrap: wrap;
         gap: 15px;
     }
-}
+} 
