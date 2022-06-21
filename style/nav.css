@@ -1,0 +1,192 @@
+.page-header__nav-row{
+    width: 90vw;
+    margin: 0 auto;
+    font-weight: 500;
+    text-transform: uppercase;
+    max-width: 1920px;
+}
+.main-nav__wrapper{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(28, 28, 28, 0.07);
+    position: relative;
+}
+.main-nav__button{
+    display: none;
+}
+.site-list{
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 25px auto;
+    max-width: 1920px;
+    gap: 20px;
+}
+.site-list__item{
+    min-width: max-content;
+    position: relative;
+}
+.site-list__link{
+    text-decoration: none;
+    color: #1C1C1C;
+}
+
+@media(min-width:768px){
+    .site-list__item:nth-child(1){
+        transition: 0.15s;
+    }
+    .site-list__item:nth-child(1):hover{
+        opacity: 0.7;
+        transform: scale(1.15);
+        transition: 0.15s;
+    }    
+    .site-list__item:nth-child(1):before{
+        display: none;
+    }
+    .site-list__item::before{
+        content: "";
+        position: absolute;
+        width: 0%;
+        right: 0;
+        height: 1px;
+        background-color: #F38120;
+        bottom: -2px;
+        transition: width ease-in-out 0.35s;
+    }
+    .page-header__nav-row{
+        font-size: 10px;
+    }
+    .site-list{
+        margin:15px auto;
+    }
+    .site-list__item:hover::before{
+        width: 100%;
+        left: 0;
+        transition: width ease-in-out 0.35s;
+    }
+    .site-list__item:hover{
+        opacity: 0.7;
+    }
+}
+@media(min-width:1100px){
+    .site-list__item::before{
+        height: 2px;
+    }
+    .page-header__nav-row{
+        font-size: 14px;
+    }
+    .site-list{
+        margin: 25px auto;
+    }
+}
+    
+
+@media(max-width:768px){
+    .main-nav__wrapper{
+        border: none;
+        z-index: 2;
+    }
+    .main-nav__button{
+        display: block;
+        position: relative;
+        top: 20px;
+        width: 35px;
+        height: 35px;
+        right: 0;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .main-nav__toggle{
+        content: "";
+        height: 2px;
+        background-color: #1C1C1C;
+        border-radius: 5px;
+        border: none;
+        width: 20px;
+        position: absolute;
+        box-shadow: 0 5px 0 0 black , 
+                    0 -5px 0 0 black;
+        left: 0;
+        transition: 0.35s;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .main-nav__toggle_open{
+        content:"";
+        box-shadow: none;
+        border: none;
+        transform: rotate(45deg);
+        height: 2px;
+        background-color: #1C1C1C;
+        border-radius: 5px;
+        width: 20px;
+        cursor: pointer;
+        transition: 0.35s;
+        z-index: 2;
+    }
+    .main-nav__toggle_open::after{
+        content:"";
+        width: 20px;
+        height: 2px;
+        transform: rotate(-90deg);
+        background-color: #1C1C1C;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        cursor: pointer;
+    }
+    .site-list{
+        transition: 0.35s;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 180px;
+        position: absolute;
+        background-color: #EDF2F5;
+        top: 25px;
+        left: 15px;
+        transition: 0.35s;
+        gap: 0;
+        border-radius: 5px;
+        z-index: 2;
+    }
+    .site-list_open{
+        display: flex;
+        z-index: 2;
+        top: 0px;
+        left: 15px;
+    }
+    .site-list__item{
+        padding: 10px 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .site-list__item:last-child{
+        display: none;
+    }
+    .site-list__item::before{
+        display: none;
+    }
+    .site-list__link{
+        padding: 8px 25px;
+    }
+    .site-list__item:hover{
+        opacity: 1;
+        background-color: #F38120;
+    }
+    .site-list__item:nth-last-child(2) {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .site-list__item:first-child:hover{
+        background-color: transparent;
+    }
+    
+}
