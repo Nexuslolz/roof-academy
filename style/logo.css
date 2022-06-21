@@ -1,0 +1,22 @@
+.logo{
+    width: 100%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo__img{
+    width: 140%;
+    min-width: 110%;
+}
+#logo {
+    height: 175px;
+}
+@media(max-width:1440px){
+    
+}
+@media(max-width:900px){
+    .logo{
+        min-width: 100px;
+    }
+}
