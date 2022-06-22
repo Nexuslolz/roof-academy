@@ -3,15 +3,17 @@
 }
 .page-header__form_open{
     position: fixed;
-    top: 150px;
+    top: 50%; 
+    left: 50%;
+    height: 75vh;
     width: 25vw;
-    max-width: 300px;
-    min-width: 260px;
-    height: max-content;
+    max-width: 370px;
+    max-height: 630px;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 25px 35px;
     background-color: #F5F5F5;
     border-radius: 30px;
@@ -190,15 +192,29 @@
     color: red;
     font-size: 12px;
 }
-@media(max-width:600px){
-    .page-header__form{
-        padding: 12px;
-        left: 12%;
-        top: 5%;
-        max-width: 320px;
+@media(max-width:1300px){
+    .page-header__form_open{
+        padding-bottom: 45px;
         margin: 0;
-        min-width: 100px;
-        width: 50%;
+    }
+    .form-content__header{
+        min-width: 260px;
+    }
+}
+@media(max-width:1000px){
+    #validation-check{
+        margin-top: 15px;
+        font-size: 9px;
+    }
+}
+@media(max-width:855px){
+    .page-header__form_open{
+        padding: 5px;
+        margin: 0;
+        min-width: 180px;
+        min-height: 350px;
+        justify-content: center;
+        gap: 10px;
     }
     .form-content__header{
         font-size: 15px;
@@ -222,4 +238,16 @@
     .form-confirm__text{
         font-size: 8px;
     }
+    .form-confirm__checkbox{
+        max-width: 150px;
+    }
+    .form__btn-close,
+    .form__btn-close::before{
+        width: 14px;
+        height: 2px;
+    }
+    .form__btn-close{
+        right: 4px;
+    }
+   
 }
