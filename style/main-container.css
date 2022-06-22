@@ -98,7 +98,7 @@
 .main-content__pic{
     position: absolute;
     top: 10px;
-    left: 0;
+    left: -13px;
     width: 26px;
 }
 
@@ -111,6 +111,9 @@
     }
     .main-content__link{
         font-size: 12px;
+    }
+    .main-content__pic{
+        left: 0;
     }
     
 }

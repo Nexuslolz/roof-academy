@@ -57,6 +57,8 @@
 @media(max-width:600px){
     .page{
         width: 100%;
+        overflow-y: hidden;
+
         background: linear-gradient(
             270deg,
             #1b2830 35.62% 
@@ -71,7 +73,6 @@
     .page-header{
         max-width: 250px;
         min-width: 250px;
-        /* display: none; */
     }
     .page-main{
         max-width: 250px;
