@@ -5,7 +5,7 @@
     position: fixed;
     top: 50%; 
     left: 50%;
-    height: 75vh;
+    /* height: 75vh; */
     width: 25vw;
     max-width: 370px;
     max-height: 630px;
@@ -220,7 +220,7 @@
     }
     .form-content__header{
         font-size: 15px;
-        min-width: 145px;
+        min-width: 145px    ;
     }
     .form-content__text{
         font-size: 8px;
