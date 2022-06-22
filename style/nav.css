@@ -114,6 +114,7 @@
         transition: 0.35s;
         cursor: pointer;
         z-index: 2;
+        padding: 0;
     }
     .main-nav__toggle_open{
         content:"";
@@ -127,6 +128,7 @@
         cursor: pointer;
         transition: 0.35s;
         z-index: 2;
+        padding: 0;
     }
     .main-nav__toggle_open::after{
         content:"";
@@ -139,6 +141,7 @@
         bottom: 0px;
         right: 0px;
         cursor: pointer;
+        padding: 0;
     }
     .site-list{
         transition: 0.35s;
