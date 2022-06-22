@@ -154,34 +154,39 @@
     .main-content{
         flex-wrap: wrap;
         gap: 15px;
+        justify-content: center;
     }
 } 
 @media(max-width:600px){
     .main-container{
-        min-width: 200px;
+        min-width: 250px;
+        align-items: center;
     }
     .main-content__header{
-        font-size: 16px;
-        min-width: 220px;
+        font-size: 26px;
+        min-width: 320px;
         text-align: center;
     }
     .main-content__subheader{
-        font-size: 11px;
+        font-size: 13px;
         margin-left: 20px;
+        min-width: 250px;
+        display: flex;
+    justify-content: center;
     }
     .main-content__content{
-        font-size: 7px;
+        font-size: 9px;
         margin-top: 25px;
-        margin-left: 0;
         line-height: 12px;
     }
     .main-content__pic{
-        left: 95px;
-        width: 12px;
-        top:0px;
-    }
+        left: 140px;
+        width: 25px;
+        top: -10px;
+}
     .main-content__link{
-        font-size: 8px;
+        font-size: 12px;
+        min-width: 270px;
     }
     .btn-img{
         width: 15px;

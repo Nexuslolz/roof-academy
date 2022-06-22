@@ -34,4 +34,7 @@
     .logo{
         max-width: 85px;
     }
+    .logo__img{
+        min-width: 175%;
+    }
 }

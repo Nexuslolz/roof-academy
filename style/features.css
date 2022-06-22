@@ -25,7 +25,20 @@
 }
 .features-list__item{
     text-align: center;
-    margin: 25px auto;
+    margin: 15px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divide{
+    content: "";
+    height: 0.5px;
+    min-width: 75px;
+    width: 10vw;
+    margin-top: 25px;
+    background-color: rgb(227, 227, 227);
+    box-shadow: 0 0 10px 0 gray;
 }
 @media(max-width:1440px){
     .features-list{
@@ -36,58 +49,76 @@
 
 @media(max-width:1000px){
     .features-list{
-        padding: 10px 15px;
-        width: 110px;
+        padding: 15px 25px;
     }
 } 
 .features__btn-mark{
     content: "";
     position: absolute;
-    width: 10px;
-    height: 1px;
+    width: 16px;
+    height: 2px;
     background-color: white;
-    top: 9px;
-    left: 5px;
+    top: 18px;
+    left: 13px;
     display: none;
     padding: 0;
+    border-radius: 10px;
 }
 .features__btn-mark::before{
     content: "";
     position: absolute;
-    width: 10px;
-    height: 1px;
+    width: 16px;
+    height: 2px;
     background-color: white;
     top: 0;
     left: 0%;
     transform: rotate(90deg);
     padding: 0;
+    border-radius: 10px;
 }
+
 @media(max-width:600px){
     .features{
         z-index: 1;
         position: absolute;
-        top: 450px;
+        top: 750px;
         order: 1000;
         transition: 0.5s;
     }
+    .features-list{
+        min-width: 250px;
+
+    }
+    .divide{
+        content: "";
+        height: 0.5px;
+        width: 250px;
+        margin-top: 25px;
+        background-color: rgb(227, 227, 227);
+        box-shadow: 0 0 10px 0 gray;
+    }
     .features_active{
-        transform: translateY(-350px);
+        transform: translateY(-600px);
         z-index: 4;
         transition: 0.5s;
     }
     .features__btn{
         display: block;
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
         background-color: #F38120;
         border: none;
         border-radius: 50%;
         position: absolute;
         top: 15px;
-        right: 6px;
+        right: 10px;
         transition: 0.5s;
         padding: 0;
         z-index: 2;
+    }
+    .features-list__item{
+        font-size: 14px;
+        max-width: 220px;
     }
     .features__btn_active{
         transform: rotate(45deg);
