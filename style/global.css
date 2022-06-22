@@ -1,6 +1,3 @@
-.visually-hidden{
-    display: none;
-}
 .page{
    max-width: 100vw;
     height: 100%;
@@ -38,6 +35,9 @@
     gap: 5%;
     margin: 0 auto;
 }
+.visually-hidden{
+    display: none;
+}
 @keyframes pulse {
 	0% {
 		box-shadow: 0 0 0 0 rgba(243, 129, 32, 0.6);
@@ -52,5 +52,37 @@
 @media(max-width:1100px){
     .page{
         font-size: 10px;
+    }
+}
+@media(max-width:600px){
+    .page{
+        width: 100%;
+        background: linear-gradient(
+            270deg,
+            #1b2830 35.62% 
+            #2b536b 55%           
+          ),
+          url(../img/BG.png) no-repeat left  / auto auto;
+    }
+    .page__body{
+        max-width: 250px;
+        min-width: 250px;
+    }
+    .page-header{
+        max-width: 250px;
+        min-width: 250px;
+        /* display: none; */
+    }
+    .page-main{
+        max-width: 250px;
+        min-width: 250px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .main__wrapper{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }

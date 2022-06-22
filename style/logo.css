@@ -9,8 +9,11 @@
     width: 140%;
     min-width: 110%;
 }
-#logo {
+.content-box .logo {
     height: 175px;
+}
+#header{
+    display: none;
 }
 @media(max-width:1440px){
     
@@ -18,5 +21,17 @@
 @media(max-width:900px){
     .logo{
         min-width: 100px;
+    }
+}
+@media(max-width:600px){
+    .content-box:nth-child(3),
+    .content-box:nth-child(5){
+        display: none;
+    }
+    #header{
+        display: block;
+    }
+    .logo{
+        max-width: 85px;
     }
 }

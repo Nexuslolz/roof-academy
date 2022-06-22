@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
+    position: relative;
 }
 .page-header__form_close{
     display: none;
@@ -37,4 +38,11 @@
         gap: 25px;
         margin-top: -50px;
     }
+}
+@media(max-width:600px){
+    .page-header__contacts-row{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }

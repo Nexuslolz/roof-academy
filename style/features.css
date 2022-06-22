@@ -21,13 +21,12 @@
     background-color: white;
     box-shadow: 0 0 15px 1px rgb(224 224 224 / 50%);
     border-radius: 15px;
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    /* clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%); */
 }
 .features-list__item{
     text-align: center;
     margin: 25px auto;
 }
-
 @media(max-width:1440px){
     .features-list{
         padding: 15px 20px;
@@ -41,3 +40,57 @@
         width: 110px;
     }
 } 
+.features__btn-mark{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    top: 9px;
+    left: 5px;
+    display: none;
+}
+.features__btn-mark::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    top: 0;
+    left: 0%;
+    transform: rotate(90deg);
+}
+@media(max-width:600px){
+    .features{
+        /* z-index: 5; */
+        position: absolute;
+        overflow: hidden;
+        top: 450px;
+        order: 1000;
+        transition: 0.5s;
+    }
+    .features_active{
+        transform: translateY(-350px);
+        z-index: 50;
+        transition: 0.5s;
+    }
+    .features__btn{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #F38120;
+        border: none;
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        right: 6px;
+        transition: 0.5s;
+    }
+    .features__btn_active{
+        transform: rotate(45deg);
+        transition: 0.5s;
+    }
+    .features__btn-mark{
+        display: block;
+    }
+}

@@ -1,0 +1,225 @@
+.page-header__form{
+    display: none;
+}
+.page-header__form_open{
+    position: fixed;
+    top: 150px;
+    width: 25vw;
+    max-width: 300px;
+    min-width: 260px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 35px;
+    background-color: #F5F5F5;
+    border-radius: 30px;
+    z-index: 10;
+    gap: 30px;
+    text-align: center;
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.541);
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+    max-width: 90%;
+}
+.form__btn-close{
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: #A0A0A0;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    transform: rotate(45deg);
+    border-radius: 10px;
+    z-index: 0;
+}
+.form__btn-close::before{
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: #A0A0A0;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(-90deg);
+    border-radius: 10px;
+    z-index: 0;
+}
+.form-content__header{
+    font-size: 30px;
+}
+.form-content__text{
+    color: #1c1c1c;
+    font-weight: 500;
+}
+.form-content__info{
+    font-size: 12px;
+}
+.form-content__input{
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px 1px rgb(224 224 224 / 50%);
+    margin-top: 15px;
+}
+.form-content__submit{
+    width: 18vw;
+    max-width: 300px;
+    min-width: 240px;
+    font-size: 16px;
+    border-radius: 80px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    line-height: 22px;
+    transition: 0.5s;
+    position: relative;
+    background-color: rgba(243, 129, 32, 1);
+    justify-content:center;
+    border: none;
+    gap: 20px;
+    cursor: pointer;
+}
+.form-content__submit{
+    transition: 0.5s;
+}
+.form-submit__text{
+    transition: 0.5s;
+}
+.btn-img__form{
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+.form-content__submit:hover .form-submit__text{
+    transition: 0.5s;
+    transform:  translateX(3px);
+}
+
+.form-content__submit:hover .btn-img__form{
+    transition: 0.5s;
+    transform: rotate(45deg) translate(-3px , 3px);
+}
+.form-content__submit:hover{
+    background-color: rgba(253, 156, 73, 1);
+}
+.form-content__wrapper{
+    width: 11%;
+    height: 9%;
+    background-color: transparent;
+    position: absolute;
+    right: 6px;
+    top: 8px;
+    z-index: 15;
+}
+.form-content__wrapper:hover{
+    cursor: pointer;
+}
+.form-content__wrapper:hover .form__btn-close{
+    background-color: rgba(243, 129, 32, 1);
+    cursor: pointer;
+}
+.form-content__wrapper:hover .form__btn-close::before{
+    background-color: rgba(243, 129, 32, 1);
+    cursor: pointer;
+}
+.form-confirm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px auto;
+    font-size: 10px;
+    position: relative;
+    left: 30px;
+}
+.form-confirm__checkbox{
+    flex-direction: column;
+}
+.form-confirm__text{
+    margin-top: 0;
+    text-align: start;
+}
+.form-confirm__link{
+    text-decoration: none;
+    color: rgba(243, 129, 32, 1);
+}
+.form-content__confirm + label::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #F38120;
+    border-radius: 5px;
+    top: 4px;
+    left: -25px;
+    background-color: white;
+    cursor: pointer;
+}
+.form-content__confirm:checked + label::after{
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    border-radius: 5px;
+    top: 4px;
+    left: -25px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 16px;
+    background-image: url(../img/checkbox.svg);
+}
+#validation-check{
+    position: absolute;
+    top: 35px;
+    left: -40px;
+    color: red;
+    font-size: 12px;
+}
+@media(max-width:600px){
+    .page-header__form{
+        padding: 12px;
+        left: 12%;
+        top: 5%;
+        max-width: 320px;
+        margin: 0;
+        min-width: 100px;
+        width: 50%;
+    }
+    .form-content__header{
+        font-size: 15px;
+    }
+    .form-content__text{
+        font-size: 8px;
+    }
+    .form-content__submit{
+        width: 150px;
+        padding: 5px;
+        font-size: 10px;
+        min-width: 100px;
+    }
+    .btn-img__form{
+        width: 18px;
+    }
+    .form-content__input{
+        padding: 10px;
+        font-size: 10px;
+    }
+    .form-confirm__text{
+        font-size: 8px;
+    }
+}

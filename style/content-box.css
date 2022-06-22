@@ -64,6 +64,14 @@
 }
 #telephone{
     color: #12C868;
+
+/* }
+.content__wrapper{
+    display: none;
+    */
+} 
+#newbox{
+    display: none;
 }
 @media(max-width:1000px){
     .content-box{
@@ -73,5 +81,40 @@
     .content-box__number{
         font-size: 13px;
         min-width: 100px;
+    }
+}
+
+@media(max-width:600px){
+    .content-box:nth-child(1),
+    .content-box:nth-child(2),
+    .content-box:nth-child(4){
+        display: none;
+    }
+    #newbox{
+        display: block;
+        font-size: 8px;
+
+    }    
+    #newbox:last-child{
+        margin-bottom: 15px;
+    }
+    .content-box:nth-child(3),
+    .content-box:nth-child(5){
+        display: none;
+    }
+    #header{
+        display: block;
+        max-width: 120px;
+        font-size: 8px;
+        margin-left: -25px;
+    }
+    #telephone{
+        text-align: center;
+    }
+    .content-box__link{
+        justify-content: center;
+    }
+    .content-box__text{
+        margin-bottom: 5px;
     }
 }
