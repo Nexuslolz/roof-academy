@@ -64,7 +64,6 @@
     .features{
         /* z-index: 5; */
         position: absolute;
-        overflow-y: hidden;
         top: 450px;
         order: 1000;
         transition: 0.5s;

@@ -58,7 +58,7 @@
     .page{
         width: 100%;
         overflow-y: hidden;
-
+        max-height: 100%;
         background: linear-gradient(
             270deg,
             #1b2830 35.62% 
