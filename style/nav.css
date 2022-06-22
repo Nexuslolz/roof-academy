@@ -157,7 +157,7 @@
         transition: 0.35s;
         gap: 0;
         border-radius: 5px;
-        z-index: 20;
+        z-index: 5;
     }
     .site-list_open{
         display: flex;
@@ -202,7 +202,7 @@
         max-width: 320px;
     }
     .site-list{
-        z-index: 20;
+        z-index: 5;
     }
     .site-list_open{
         min-width: 100%;
@@ -210,7 +210,7 @@
         min-height: 100%;
         left: -45px;
         top: 45px;
-        z-index: 20;
+        z-index: 5;
     }
     .main-nav__wrapper{
         align-items: flex-start;

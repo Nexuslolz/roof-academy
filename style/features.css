@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    z-index: -3;
 }
 
 .features__btn{
@@ -21,7 +22,6 @@
     background-color: white;
     box-shadow: 0 0 15px 1px rgb(224 224 224 / 50%);
     border-radius: 15px;
-    /* clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%); */
 }
 .features-list__item{
     text-align: center;
@@ -64,7 +64,7 @@
 }
 @media(max-width:600px){
     .features{
-        /* z-index: 5; */
+        z-index: 1;
         position: absolute;
         top: 450px;
         order: 1000;
@@ -72,7 +72,7 @@
     }
     .features_active{
         transform: translateY(-350px);
-        z-index: 50;
+        z-index: 4;
         transition: 0.5s;
     }
     .features__btn{
@@ -87,10 +87,12 @@
         right: 6px;
         transition: 0.5s;
         padding: 0;
+        z-index: 2;
     }
     .features__btn_active{
         transform: rotate(45deg);
         transition: 0.5s;
+        z-index: 2;
     }
     .features__btn-mark{
         display: block;

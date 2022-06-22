@@ -193,16 +193,20 @@
     color: red;
     font-size: 12px;
 }
-@media(max-width:1300px){
+@media(max-width:1250px){
     .page-header__form_open{
         padding-bottom: 45px;
         margin: 0;
+        top: 45%;
     }
     .form-content__header{
         min-width: 260px;
     }
 }
-@media(max-width:1000px){
+@media(max-width:1100px){
+    .page-header__form_open{
+        top: 35%;
+    }
     #validation-check{
         margin-top: 15px;
         font-size: 9px;
@@ -211,7 +215,61 @@
 @media(max-width:855px){
     .page-header__form_open{
         padding: 5px;
+        top: 30%; 
+        left: 50%;
         margin: 0;
+        min-width: 260px;
+        max-width: 260px;
+        min-height: 430px;
+        max-height: 430px;
+        justify-content: space-around;
+        gap: 10px;
+        border-radius: 20px;
+    }
+    .form-content__header{
+        font-size: 17px;
+        min-width: 145px    ;
+    }
+    .form-content__text{
+        font-size: 10px;
+    }
+    .form-content__submit{
+        width: 150px;
+        padding: 5px;
+        font-size: 12px;
+        min-width: 100px;
+    }
+    .btn-img__form{
+        width: 20px;
+    }
+    .form-content__input{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .form-confirm__text{
+        font-size: 10px;
+    }
+    .form-confirm__checkbox{
+        max-width: 132px;
+    }
+    .form__btn-close,
+    .form__btn-close::before{
+        width: 14px;
+        height: 2px;
+        padding: 0;
+    }
+    .form__btn-close{
+        right: 4px;
+        padding: 0;
+    }   
+}
+@media(max-width:600px){
+    .page-header__form_open{
+        padding: 5px;
+        top: 25%; 
+        left: 50%;
+        margin: 0;
+        border-radius: 10px;
         min-width: 180px;
         max-width: 180px;
         min-height: 350px;
@@ -255,5 +313,4 @@
         right: 4px;
         padding: 0;
     }
-   
 }
