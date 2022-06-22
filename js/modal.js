@@ -1,13 +1,14 @@
 /////// open modal window
-const openModal = document.querySelector('.content-box__number');
+const openModal = document.querySelectorAll('.content-box__number');
 const modal = document.querySelector('.page-header__form');
 const closeModal = document.querySelector('.form-content__wrapper')
 
-openModal.addEventListener('click', function(){
+openModal.forEach(elem =>
+    elem.addEventListener('click', function(){
     if(!(modal.classList.contains('page-header__form_open'))){
         modal.classList.add('page-header__form_open')
     }
-})
+}))
 closeModal.addEventListener('click', function() {
     if(modal.classList.contains('page-header__form_open')){
         modal.classList.remove('page-header__form_open')
