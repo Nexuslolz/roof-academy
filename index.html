@@ -4,9 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/global.css" />
+    <link rel="stylesheet" href="./style/nav.css" />
+    <link rel="stylesheet" href="./style/content-box.css" />
+    <link rel="stylesheet" href="./style/contacts.css" />
+    <link rel="stylesheet" href="./style/logo.css" />
+    <link rel="stylesheet" href="./style/features.css" />
+    <link rel="stylesheet" href="./style/main-container.css" />
+    <link rel="stylesheet" href="./style/page-header__form.css" />
+
     <title>Академия кровли</title>
   </head>
   <body class="page__body">
@@ -14,8 +26,26 @@
       <div class="page-header__nav-row">
         <nav class="main-nav">
           <div class="main-nav__wrapper">
-            <div class="main-nav__button">
-              <button class="main-nav__toggle">
+            <div class="content-box logo" id="header">
+              <div class="logo">
+                <h1 class="visually-hidden">Академия кровли</h1>
+                <img src="./img/logo.png" alt="logo" class="logo__img" />
+              </div>
+            </div>
+          <div class="content-box" id="header">
+              <p class="content-box__text">
+                <strong> Пн-Пт</strong> 9:00 - 18:00, <strong>Сб</strong> 10:00 -
+                18:00
+              </p>
+              <a class="content-box__number" href="#">
+                <strong> 8 (800) 222-54-60</strong></a
+              >
+              <p class="content-box__link-text" href="#" id="telephone">
+                Позвоните мне
+              </p>
+            </div>
+            <div class="main-nav__button main-nav__button">
+              <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
               </button>
             </div>
@@ -23,7 +53,10 @@
               <li class="site-list__item">
                 <a href="#" class="site-list__link">
                   <span class="visually-hidden"> Главная</span>
-                  <img class="site-list__img" src="./img/homePage.svg" alt="Ссылка на главную"
+                  <img
+                    class="site-list__img"
+                    src="./img/homePage.svg"
+                    alt="Ссылка на главную"
                 /></a>
               </li>
               <li class="site-list__item">
@@ -47,7 +80,85 @@
               <li class="site-list__item">
                 <a href="#" class="site-list__link">Контакты</a>
               </li>
+              <div class="content__wrapper">
+                <div class="content-box" id="newbox">
+                  <p class="content-box__text">
+                    <strong> Кровельные и фасадные материалы </strong> в Тюмени и
+                    области.
+                  </p>
+                  <p class="content-box__text">
+                    Профессиональный монтаж с 2010 года.
+                  </p>
+                </div>
+                <div class="content-box" id="newbox">
+                  <a href="#" class="content-box__link">
+                    <span class="content-box__pic">Pdf</span>
+                    <span class="content-box__link-text"
+                      >Скачать прайс-каталог</span
+                    >
+                  </a>
+                </div>
+                <div class="content-box" id="newbox">
+                  <div class="content-box__wrapper">
+                    <img
+                      src="./img/onlineMark.svg"
+                      alt="online"
+                      class="content-box__mark"
+                    />
+                    <span class="content-box__text"
+                      >Отвечаем <strong> онлайн</strong></span
+                    >
+                  </div>
+                  <div class="content-box__wrapper">
+                    <ul class="contact-list">
+                      <li class="contact-list__item">
+                        <a
+                          href="https://www.viber.com/ru/"
+                          class="contact-list__link"
+                          target="_blank"
+                        >
+                          <img
+                            src="./img/viber.svg"
+                            alt="Viber"
+                            class="contact-list__img"
+                          />
+                          <span class="visually-hidden">Ссылка на вайбер</span>
+                        </a>
+                      </li>
+                      <li class="contact-list__item">
+                        <a
+                          href="https://www.whatsapp.com/"
+                          class="contact-list__link"
+                          target="_blank"
+                        >
+                          <img
+                            src="./img/whatsappsvg.svg"
+                            alt="WhatsApp"
+                            class="contact-list__img"
+                          />
+                          <span class="visually-hidden">Ссылка на вотсап</span>
+                        </a>
+                      </li>
+                      <li class="contact-list__item">
+                        <a
+                          href="https://telegram.org/"
+                          class="contact-list__link"
+                          target="_blank"
+                        >
+                          <img
+                            src="./img/telegram.svg"
+                            alt="Telegram"
+                            class="contact-list__img"
+                          />
+                          <span class="visually-hidden">Ссылка на телеграм</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
             </ul>
+            
+              </div>
+            </div>
           </div>
         </nav>
       </div>
@@ -61,19 +172,23 @@
         </div>
         <div class="content-box">
           <a href="#" class="content-box__link">
-            <img src="./img/pdfIco.svg" alt="значок PDF" class="content-box__img" />
+            <span class="content-box__pic">Pdf</span>
             <span class="content-box__link-text">Скачать прайс-каталог</span>
           </a>
         </div>
-        <div class="content-box">
+        <div class="content-box" id="logo">
           <div class="logo">
-            <h1 class="visuallt-hidden">Академия кровли</h1>
+            <h1 class="visually-hidden">Академия кровли</h1>
             <img src="./img/logo.png" alt="logo" class="logo__img" />
           </div>
         </div>
         <div class="content-box">
           <div class="content-box__wrapper">
-            <img src="./img/onlineMark.svg" alt="online" class="content-box__mark" />
+            <img
+              src="./img/onlineMark.svg"
+              alt="online"
+              class="content-box__mark"
+            />
             <span class="content-box__text"
               >Отвечаем <strong> онлайн</strong></span
             >
@@ -81,27 +196,67 @@
           <div class="content-box__wrapper">
             <ul class="contact-list">
               <li class="contact-list__item">
-                <img src="./img/viber.svg" alt="Viber" class="contact-list__img" />
-                <span class="visually-hidden">Ссылка на вайбер</span>
+                <a
+                  href="https://www.viber.com/ru/"
+                  class="contact-list__link"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/viber.svg"
+                    alt="Viber"
+                    class="contact-list__img"
+                  />
+                  <span class="visually-hidden">Ссылка на вайбер</span>
+                </a>
               </li>
               <li class="contact-list__item">
-                <img src="./img/whatsappsvg.svg" alt="WhatsApp" class="contact-list__img" />
-                <span class="visually-hidden">Ссылка на вотсап</span>
+                <a
+                  href="https://www.whatsapp.com/"
+                  class="contact-list__link"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/whatsappsvg.svg"
+                    alt="WhatsApp"
+                    class="contact-list__img"
+                  />
+                  <span class="visually-hidden">Ссылка на вотсап</span>
+                </a>
               </li>
               <li class="contact-list__item">
-                <img src="./img/telegram.svg" alt="Telegram" class="contact-list__img" />
-                <span class="visually-hidden">Ссылка на телеграм</span>
+                <a
+                  href="https://telegram.org/"
+                  class="contact-list__link"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/telegram.svg"
+                    alt="Telegram"
+                    class="contact-list__img"
+                  />
+                  <span class="visually-hidden">Ссылка на телеграм</span>
+                </a>
               </li>
             </ul>
           </div>
         </div>
         <div class="content-box">
-          <p class="content-box__text">Пн-Пт 9:00 - 18:00, Сб 10:00 - 18:00</p>
-          <p class="content-box__text">8 (800) 222-54-60</p>
-          <a class="content-box__link" href="">Позвоните мне</a>
+          <p class="content-box__text">
+            <strong> Пн-Пт</strong> 9:00 - 18:00, <strong>Сб</strong> 10:00 -
+            18:00
+          </p>
+          <a class="content-box__number" href="#">
+            <strong> 8 (800) 222-54-60</strong></a
+          >
+          <p class="content-box__link-text" href="#" id="telephone">
+            Позвоните мне
+          </p>
         </div>
-        <form action="#" class="page-header__form">
+        <form action="#" class="page-header__form page-header__form_close">
           <div class="form-content">
+            <div class="form-content__wrapper">
+              <button class="form__btn-close" type="button"></button>
+            </div>
             <h2 class="form-content__header">Быстро оставить заявку</h2>
             <p class="form-content__text">
               Введите номер, мы позвоним вам в течение 10 минут в рабочее время
@@ -113,60 +268,115 @@
           <div class="form-content">
             <label for="popup-input">Введите номер телефона</label>
             <input
-              placeholder="+7 (_ _ _)_ _ _-_ _-_ _"
+              placeholder="8 - _ _ _ - _ _ _ - _ _ _ _"
               required
-              pattern="[8]{1}[0-9]{3}[0-9]{3}[0-9]{4}"
+              pattern="[8]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"
               id="popup-input"
               class="form-content__input"
+              required
             />
           </div>
           <div class="form-content">
-            <button class="form-content__submit" type="submit">
-              Позвоните мне <img src="./img/arrow.svg" alt="button arrow" class="btn-img" />
-            </button>
-            <input
-              type="checkbox"
-              id="form-confirm"
-              class="form-content__confirm"
-            />
-            <label for="form-confirm"></label>
-            <a href="#" class="form-content__link"
-              >Политики конфиденциальности</a
-            >
+            <div class="form-submit">
+              <button class="form-content__submit" type="submit">
+                <span class="form-submit__text">Позвоните мне</span>
+                <img
+                  src="./img/arrow.svg"
+                  alt="button arrow"
+                  class="btn-img__form"
+                />
+              </button>
+            </div>
+            <div class="form-confirm">
+              <input
+                type="checkbox"
+                id="form-confirm"
+                class="visually-hidden form-content__confirm"
+                name="confirm"
+              />
+              <label for="form-confirm"></label>
+              <div class="form-confirm__checkbox">
+                <p class="form-confirm__text">
+                  Нажимая кнопку вы соглашаетесь с условиями
+                  <a href="#" class="form-confirm__link"
+                    >Политики конфиденциальности</a
+                  >
+                </p>
+                <span id="validation-check"></span>
+              </div>
+            </div>
           </div>
         </form>
       </div>
     </header>
     <main class="page-main">
       <section class="features">
-        <button class="features__btn"></button>
+        <button class="features__btn"><div class="features__btn-mark"></div></button>
         <ul class="features-list">
-            <li class="featires-list__item"><strong>Гарантия от 50 лет</strong> на материалы и 5 лет на монтаж
-            </li>
-            <li class="featires-list__item"><strong>Замер, монтажный проект</strong> и еще 4 услуги бесплатно
-            </li>
-            <li class="featires-list__item"><strong>Сметы точны</strong> до копейки
-            </li>
-            <li class="featires-list__item"><strong>Поэтапная оплата,</strong> кредит или рассрочка
-            </li>
-            <li class="featires-list__item"><strong>Наши крыши в каждом поселке</strong> и дачном сообществе региона
-            </li>
-        </ul>       
+          <li class="features-list__item">
+            <strong>Гарантия от 50 лет</strong> на материалы и 5 лет на монтаж
+          </li>
+          <li class="features-list__item">
+            <strong>Замер, монтажный проект</strong> и еще 4 услуги бесплатно
+          </li>
+          <li class="features-list__item">
+            <strong>Сметы точны</strong> до копейки
+          </li>
+          <li class="features-list__item">
+            <strong>Поэтапная оплата,</strong> кредит или рассрочка
+          </li>
+          <li class="features-list__item">
+            <strong>Наши крыши в каждом поселке</strong> и дачном сообществе
+            региона
+          </li>
+        </ul>
+      </section>
       <section class="main-container">
-        <div class="main-content">
-            <h1 class="main-content__header">Продажа <strong> кровельных материалов </strong> в Тюмени и Тюменской области</h1>
-            <img src="./img/circles.svg" alt="декоративная вставка" class="main-content__img">
-            <span class="main-content__text">и монтаж под ключ</span>
+        <div class="main-content-head">
+          <h1 class="main-content__header">
+            Продажа <strong> кровельных материалов </strong> в Тюмени и
+            Тюменской области
+          </h1>
+
+          <span class="main-content__subheader">
+            <img
+              src="./img/circles.svg"
+              alt="декоративная вставка"
+              class="main-content__img"
+            />и монтаж под ключ</span
+          >
         </div>
-        <div class="main-content">
-            <a href="#" class="main-content__link"><span class="main-content__text">Рассчитать стоимость материалов и монтажа</span> <img src="./img/arrow.svg" alt="button arrow" class="btn-img"></a>
-            <a href="#" class="main-content__link"><span class="main-content__text">записаться на просмотр объектов</span> <img src="./img/arrow.svg" alt="button arrow" class="btn-img"></a>
-        </div>
-        <div class="main-content">
-            <img src="./img/handIco.svg" alt="декоративная вставка" class="main-content__img">
-            <p class="main-content__text"><strong>Ответьте на несколько вопросов и получите </strong>сметную стоимость и 3 подарка за экономию нашего времени</p>
+        <div class="main__wrapper">
+          <div class="main-content content-btns">
+            <a href="#" class="main-content__link"
+              ><span class="main-content__text"
+                >Рассчитать стоимость материалов и монтажа</span
+              >
+              <img src="./img/arrow.svg" alt="button arrow" class="btn-img"
+            /></a>
+            <a href="#" class="main-content__link"
+              ><span class="main-content__text"
+                >Записаться на просмотр объектов</span
+              >
+              <img src="./img/arrow.svg" alt="button arrow" class="btn-img"
+            /></a>
+          </div>
+          <div class="main-content">
+            <img
+              src="./img/handIco.svg"
+              alt="декоративная вставка"
+              class="main-content__pic"
+            />
+            <p class="main-content__content">
+              <strong>Ответьте на несколько вопросов и получите </strong>сметную
+              стоимость и 3 подарка за экономию нашего времени
+            </p>
+          </div>
         </div>
       </section>
     </main>
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <script src="./js/features.js" defer></script>
   </body>
 </html>
