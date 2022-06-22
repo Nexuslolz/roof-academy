@@ -60,12 +60,12 @@
         overflow-y: hidden;
 	    -webkit-overflow-y: hidden;
         max-height: 600px;
-        background: linear-gradient(
+/*         background: linear-gradient(
             270deg,
             #1b2830 35.62% 
             #2b536b 55%           
           ),
-          url(../img/BG.png) no-repeat left  / auto auto;
+          url(../img/BG.png) no-repeat left  / auto auto; */
     }
     .page__body{
         max-width: 350px;
