@@ -5,7 +5,6 @@
     position: fixed;
     top: 50%; 
     left: 50%;
-    /* height: 75vh; */
     width: 25vw;
     max-width: 370px;
     max-height: 630px;
@@ -41,6 +40,7 @@
     transform: rotate(45deg);
     border-radius: 10px;
     z-index: 0;
+    padding: 0;
 }
 .form__btn-close::before{
     content: "";
@@ -54,6 +54,7 @@
     transform: rotate(-90deg);
     border-radius: 10px;
     z-index: 0;
+    padding: 0;
 }
 .form-content__header{
     font-size: 30px;
@@ -248,9 +249,11 @@
     .form__btn-close::before{
         width: 14px;
         height: 2px;
+        padding: 0;
     }
     .form__btn-close{
         right: 4px;
+        padding: 0;
     }
    
 }
