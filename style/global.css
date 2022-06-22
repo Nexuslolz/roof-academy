@@ -4,7 +4,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     margin: 0 auto;
-    background: url(../img/BG.png)no-repeat top / cover fixed;
+    background: url(../img/BG.png)no-repeat top / auto 100% fixed;
     color: #1C1C1C;
 }
 .page__body{
