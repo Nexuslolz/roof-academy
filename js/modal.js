@@ -4,13 +4,13 @@ const modal = document.querySelector('.page-header__form');
 const closeModal = document.querySelector('.form-content__wrapper')
 
 openModal.forEach(elem =>
-    elem.addEventListener('click', function(){
-    if(!(modal.classList.contains('page-header__form_open'))){
-        modal.classList.add('page-header__form_open')
-    }
-}))
-closeModal.addEventListener('click', function() {
-    if(modal.classList.contains('page-header__form_open')){
+    elem.addEventListener('click', function () {
+        if (!(modal.classList.contains('page-header__form_open'))) {
+            modal.classList.add('page-header__form_open')
+        }
+    }))
+closeModal.addEventListener('click', function () {
+    if (modal.classList.contains('page-header__form_open')) {
         modal.classList.remove('page-header__form_open')
     }
 })
@@ -20,23 +20,25 @@ closeModal.addEventListener('click', function() {
 const sendForm = document.querySelector('.form-content__submit');
 const input = document.getElementById("popup-input");
 const checkbox = document.querySelector('.form-content__confirm')
-const validCheck =  document.getElementById("validation-check");
+const validCheck = document.getElementById("validation-check");
 
 function isValid() {
-    if (!input.checkValidity()) {
-        input.innerHTML = input.validationMessage;
+    if (!(input.validity.valid)) {
+        sendForm.setAttribute('type', 'submit')
     } else if (!(checkbox.checked)) {
+        sendForm.setAttribute('type', 'button')
         validCheck.innerHTML = 'Нужно ваше согласие с условиями политики конфиденциальности!'
-        return 
+        return
     } else {
         modal.innerHTML = `<div class = "form-content_send">
 <h2 class = "form-content__header">Спасибо!</h2> 
 <p class="form-content__text"> Ваша заявка отправлена.</p>
  </div>`
- setTimeout(function(){
-     modal.classList.remove('page-header__form_open')
-     location.reload()
- },2000)
+        setTimeout(function () {
+            modal.classList.remove('page-header__form_open')
+            input.removeAttribute('checked')
+            location.reload()
+        }, 2000)
     }
 }
 
