@@ -28,6 +28,7 @@
 }
 
 .page-main {
+    overflow-y: hidden;
     width: 85vw;
     max-width: 1920px;
     display: flex;
@@ -70,8 +71,8 @@
         max-height: 600px;
         /* background: linear-gradient(
             270deg,
-            #1b2830 35.62% 
-            #2b536b 55%           
+            #1b2830 35.62%
+            #2b536b 55%
           ),
           url(../img/BG.png) no-repeat left  / auto auto; */
     }
