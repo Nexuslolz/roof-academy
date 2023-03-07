@@ -91,8 +91,7 @@
          /* top: 10%; */
          order: 1000;
          transition: 0.5s;
-         transform: translateY(10%);
-         box-shadow: 0 0 15px 1px #333333ce;
+         transform: translateY(25%);
          border-radius: 10px;
 
      }
