@@ -91,6 +91,8 @@
          /* top: 70%; */
          order: 1000;
          transition: 0.5s;
+         transform: translateY(90%);
+
      }
 
      .features-list {
@@ -108,8 +110,8 @@
      }
 
      .features_active {
-         /* transform: translateY(-600px); */
          top: 10%;
+         transform: translateY(0px);
          z-index: 4;
          order: 1000;
          transition: 0.5s;
