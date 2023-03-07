@@ -69,6 +69,7 @@
         width: 100%;
         overflow-y: hidden;
         max-height: 100vh;
+        height: 100%;
         background: none;
     }
 
@@ -89,6 +90,9 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        overflow-y: hidden;
+        overflow-x: visible;
+        max-height: 600px;
     }
 
     .main__wrapper {
