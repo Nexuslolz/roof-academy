@@ -28,7 +28,6 @@
 }
 
 .page-main {
-    overflow-y: hidden;
     width: 85vw;
     max-width: 1920px;
     display: flex;
