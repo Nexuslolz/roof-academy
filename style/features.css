@@ -88,7 +88,7 @@
      .features {
          z-index: 1;
          position: absolute;
-         top: 75%;
+         top: 65%;
          order: 1000;
          transition: 0.5s;
      }
@@ -111,6 +111,7 @@
          /* transform: translateY(-600px); */
          top: 10%;
          z-index: 4;
+         order: 1000;
          transition: 0.5s;
      }
 
