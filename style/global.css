@@ -70,7 +70,7 @@
         overflow-y: hidden;
         max-height: 100vh;
         height: 100%;
-        background: none;
+        /* background: none; */
     }
 
     .page__body {
