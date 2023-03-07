@@ -95,6 +95,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        max-height: 600px;
     }
 
     .main__wrapper {

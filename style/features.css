@@ -87,11 +87,11 @@
  @media(max-width:600px) {
      .features {
          z-index: 1;
-         position: absolute;
-         top: 10%;
+         /* position: relative; */
+         /* top: 10%; */
          order: 1000;
          transition: 0.5s;
-         transform: translateX(-100%);
+         transform: translateY(10%);
 
      }
 
@@ -110,8 +110,8 @@
      }
 
      .features_active {
-         top: 10%;
-         transform: translateX(0%);
+         /* top: 10%; */
+         transform: translateY(-70%);
          z-index: 4;
          order: 1000;
          transition: 0.5s;
