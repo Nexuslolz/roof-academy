@@ -70,7 +70,7 @@
         height: auto;
         max-height: 100vh;
         overflow-y: hidden;
-        max-height: 600px;
+        /* max-height: 600px; */
         /* background: linear-gradient(
             270deg,
             #1b2830 35.62%
