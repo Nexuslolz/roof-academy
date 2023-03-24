@@ -4,7 +4,7 @@ https://nexuslolz.github.io/roof-academy/
 
 ## Preview
 
-<img src='img/roof.gif' width='550'>
+<img src='img/roof.gif' width='350'>
 
 ## Описание
 Рекламный лендинг кровельной компании
